@@ -1,0 +1,34 @@
+<div class="game-container" *ngIf="showPlayBoard">
+    <h1 *ngIf="!winner">Current Player:
+        <span class="text-uppercase">{{ playerName }}</span>
+    </h1>
+
+    <button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+
+    <div class="cells-block">
+        <h2 *ngIf="winner" class="text-info">
+            <span class="text-uppercase">{{ winner }}</span> won the game!
+        </h2>
+
+        <main>
+            <app-cell *ngFor="let cell of cells; let i = index" [value]="cell" (click)="onMove(i)">
+            </app-cell>
+        </main>
+    </div>
+</div>
+
+<div class="game-container player-details" *ngIf="!showPlayBoard">
+    <h5>Player Details</h5>
+    <div>
+        <label>Player X Name</label>&nbsp;
+        <input nbInput status="info" [(ngModel)]="players.playerX">
+    </div>
+    <br>
+    <div>
+        <label>Player O Name</label>&nbsp;
+        <input nbInput status="info" [(ngModel)]="players.playerO">
+    </div>
+    <div>
+        <button nbButton outline status="danger" (click)="newGame()">Start Game</button>
+    </div>
+</div>

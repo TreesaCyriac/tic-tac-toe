@@ -21,9 +21,13 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
+              "node_modules/@nebular/theme/styles/prebuilt/cosmic.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ionicons/dist/css/ionicons.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -56,7 +60,9 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -86,7 +92,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css"
@@ -120,6 +127,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "tic-tac-toe"
 }

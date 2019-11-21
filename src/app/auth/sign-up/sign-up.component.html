@@ -1,0 +1,52 @@
+<div class="card-header">
+    <h3>Sign Up</h3>
+</div>
+<div *ngIf="success">
+    <h6 class="text-success text-center">Sign Up Success!</h6>
+</div>
+<div class="card-body">
+    <form name="signUpform" #f="ngForm">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon ion-ios-person"></i></span>
+            </div>
+            <input class="form-control" type="text" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
+                placeholder="Username" required autocomplete="off">
+        </div>
+        <div *ngIf="userName.invalid && userName.errors.required && submitAttempt">
+            <span class="text-danger">User Name is required</span>
+        </div><br>
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon ion-md-key"></i></span>
+            </div>
+            <input class="form-control" type="password" name="password1" [(ngModel)]="user.password1"
+                #password1="ngModel" placeholder="password" required autocomplete="off">
+        </div>
+        <div *ngIf="password1.invalid && password1.errors.required && submitAttempt">
+            <span class="text-danger">Password is required</span>
+        </div><br>
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon ion-md-key"></i></span>
+            </div>
+            <input class="form-control" type="password" name="password2" [(ngModel)]="user.password2"
+                #password2="ngModel" placeholder="Re-enter password" required validateEqual="password1"
+                autocomplete="off">
+        </div>
+        <div *ngIf="password2.invalid && password2.errors.required && submitAttempt">
+            <span class="text-danger">Password is required</span>
+        </div>
+        <div *ngIf="password2.invalid && !password2.validateEqual && !password2.errors.required && submitAttempt">
+            <span class="text-danger">Passwords doesnt match</span>
+        </div><br>
+        <div class="form-group text-center">
+            <input type="submit" value="Submit" (click)="onSubmit()" class="btn login_btn">
+        </div>
+    </form>
+</div>
+<div class="card-footer">
+    <div class="d-flex justify-content-center links">
+        <a (click)="onReturn()">Return to Sign In</a>
+    </div>
+</div>
