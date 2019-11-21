@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574337536442,
+  "timestamp": 1574338419538,
   "index": "https://treesacyriac.github.io/tic-tac-toe/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://treesacyriac.github.io/tic-tac-toe/favicon.ico",
         "https://treesacyriac.github.io/tic-tac-toe/index.html",
-        "https://treesacyriac.github.io/tic-tac-toe/main-es2015.239d37635e33b8305468.js",
-        "https://treesacyriac.github.io/tic-tac-toe/main-es5.239d37635e33b8305468.js",
+        "https://treesacyriac.github.io/tic-tac-toe/main-es2015.0b8bfb8639ab159fa1f3.js",
+        "https://treesacyriac.github.io/tic-tac-toe/main-es5.0b8bfb8639ab159fa1f3.js",
         "https://treesacyriac.github.io/tic-tac-toe/manifest.webmanifest",
         "https://treesacyriac.github.io/tic-tac-toe/polyfills-es2015.2987770fde9daa1d8a2e.js",
         "https://treesacyriac.github.io/tic-tac-toe/polyfills-es5.ef4b1e1fc703b3ff76e3.js",
@@ -54,14 +54,14 @@
     "https://treesacyriac.github.io/tic-tac-toe/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://treesacyriac.github.io/tic-tac-toe/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://treesacyriac.github.io/tic-tac-toe/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://treesacyriac.github.io/tic-tac-toe/index.html": "7fd737e0eead29cd3c0058142ba185737ce37aa4",
+    "https://treesacyriac.github.io/tic-tac-toe/index.html": "6f9886070a21065bb279cca8f3bba54cc64f2fff",
     "https://treesacyriac.github.io/tic-tac-toe/ionicons.96f1c901c087fb64019f.woff2": "60c9e10a709815148bf4a9b333a396692739cd5c",
     "https://treesacyriac.github.io/tic-tac-toe/ionicons.99b863497156d4478ec3.woff": "169c9d8ca76c2eae73868f5dbf822b18f7b94516",
     "https://treesacyriac.github.io/tic-tac-toe/ionicons.a558ac78b554eefa1817.eot": "8803823fbdbfae35c914b4736fa946e040d2bd3f",
     "https://treesacyriac.github.io/tic-tac-toe/ionicons.d659209138fc7c28c23a.svg": "19c342bacb75fb34cbd892f453af1e7990ec331a",
     "https://treesacyriac.github.io/tic-tac-toe/ionicons.ef4a9f280b0e411ddf6c.ttf": "0f178b4b286fe6dcbb453d725a81628c472f268d",
-    "https://treesacyriac.github.io/tic-tac-toe/main-es2015.239d37635e33b8305468.js": "9100858cc1e9bd913039baa4f67b021095e93fe3",
-    "https://treesacyriac.github.io/tic-tac-toe/main-es5.239d37635e33b8305468.js": "351c7fc3baac2e1cf992d43ea46f1a8e77a98fcb",
+    "https://treesacyriac.github.io/tic-tac-toe/main-es2015.0b8bfb8639ab159fa1f3.js": "d3bd1a2572a432d16cfa31fa2bf60d0144cd8539",
+    "https://treesacyriac.github.io/tic-tac-toe/main-es5.0b8bfb8639ab159fa1f3.js": "8cfd33b01cc1844590e59838a558412f7e4f0868",
     "https://treesacyriac.github.io/tic-tac-toe/manifest.webmanifest": "3d3d0ca4f9190cac16a625ba76c0f821f19afbce",
     "https://treesacyriac.github.io/tic-tac-toe/polyfills-es2015.2987770fde9daa1d8a2e.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "https://treesacyriac.github.io/tic-tac-toe/polyfills-es5.ef4b1e1fc703b3ff76e3.js": "45c51483238468881240579c3fdecd19144cff17",
