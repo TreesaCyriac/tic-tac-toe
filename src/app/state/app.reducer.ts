@@ -8,7 +8,10 @@ export interface IAppState {
 }
 
 export const DEFAULT_APP_STATE = {
-    newUser: [],
+    newUser: [{
+        userName: "tcyriac",
+        password1: "password"
+    }],
 };
 
 /** Reducer */

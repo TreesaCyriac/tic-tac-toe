@@ -39,12 +39,14 @@ export class LoginComponent implements OnInit {
         this._router.navigate(['/game']);
       } else {
         this.error = true;
+        this.user.password1 = '';
       }
     });
 
   }
 
   onSignUp() {
+    this.user = new User();
     this.error = false;
     this.signUpCheck = true;
   }
