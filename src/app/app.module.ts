@@ -1,4 +1,3 @@
-import { AuthService } from './auth/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -25,6 +24,7 @@ import { AppActions } from './state/app.action';
 import { AuthGuard } from './auth/auth-guard.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AuthService } from './auth/auth.service';
 
 export const reducers = {
   appView: appView

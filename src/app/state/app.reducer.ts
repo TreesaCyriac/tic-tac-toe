@@ -32,8 +32,6 @@ export function appView (state: IAppState = DEFAULT_APP_STATE, action: IAction):
 
 function handleNewUser(state: IAppState, action: IAction): IAppState {
     const newState = _.cloneDeep(state);
-    console.log(newState);
     newState.newUser.push(action.payload);
-    console.log(newState);
     return newState;
 }

@@ -32,7 +32,7 @@ export class PlayBoardComponent implements OnInit {
   ngOnInit() {
   }
 
-  newGame() {
+  onNewGame() {
     this.cells = Array(9).fill(null);
     this.showPlayBoard = true;
     this.winner = null;

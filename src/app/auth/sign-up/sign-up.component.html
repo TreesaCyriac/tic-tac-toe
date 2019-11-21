@@ -38,7 +38,7 @@
             <span class="text-danger">Password is required</span>
         </div>
         <div *ngIf="password2.invalid && !password2.errors.validateEqual && !password2.errors.required && submitAttempt">
-            <span class="text-danger">Passwords doesnt match</span>
+            <span class="text-danger">Passwords doesn't match</span>
         </div><br>
         <div class="form-group text-center">
             <input type="submit" value="Submit" (click)="onSubmit()" class="btn login_btn">

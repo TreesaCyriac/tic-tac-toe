@@ -3,13 +3,12 @@
         <span class="text-uppercase">{{ playerName }}</span>
     </h1>
 
-    <button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+    <button nbButton outline status="danger" (click)="onNewGame()">Start new Game</button>
 
     <div class="cells-block">
         <h2 *ngIf="winner" class="text-info">
             <span class="text-uppercase">{{ winner }}</span> won the game!
         </h2>
-
         <main>
             <app-cell *ngFor="let cell of cells; let i = index" [value]="cell" (click)="onMove(i)">
             </app-cell>
@@ -29,6 +28,6 @@
         <input nbInput status="info" [(ngModel)]="players.playerO">
     </div>
     <div>
-        <button nbButton outline status="danger" (click)="newGame()">Start Game</button>
+        <button nbButton outline status="danger" (click)="onNewGame()">Start Game</button>
     </div>
 </div>

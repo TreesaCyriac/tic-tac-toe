@@ -1,12 +1,10 @@
-import { User } from './../model';
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import * as selector from './app.selectors';
 import { IAppStoreState } from './state.model';
 import { AppActions } from './app.action';
-
-
+import { User } from './../model';
 
 @Injectable()
 export class AppService {
@@ -24,7 +22,6 @@ export class AppService {
     sGetNewUser() {
         return this.store.select(selector.getNewUser);
     }
-
 
     /**
     * Store Dispatchers

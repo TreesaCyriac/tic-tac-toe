@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   public error: boolean = false;
 
   private _userData: Array<User> = [];
+  private _userExist: boolean = false;
 
   constructor(
     private _router: Router,
@@ -33,16 +34,19 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
     this.error = false;
-    this._authService.setAuthToken("Token 1234");
+    this._authService.setAuthToken("token_1234");
     this._userData.forEach((user: User) => {
-      if ((user.userName === this.user.userName) && (user.password1 === this.user.password1)) {
-        this._router.navigate(['/game']);
-      } else {
-        this.error = true;
-        this.user.password1 = '';
+      if(!this._userExist) {
+        if ((user.userName === this.user.userName) && (user.password1 === this.user.password1)) {
+          this._userExist = true;
+        } else {
+          this.error = true;
+          this._userExist = false;
+        }
       }
     });
-
+    
+    this._userExist ? this._router.navigate(['/game']) : this.user.password1 = '';
   }
 
   onSignUp() {
@@ -53,10 +57,6 @@ export class LoginComponent implements OnInit {
 
   signUpCheckEmitted(pEvent: boolean) {
     this.signUpCheck = pEvent;
-  }
-
-  newUserEmitted(pEvent: User) {
-    this.signUpCheck = false;
   }
 
 }

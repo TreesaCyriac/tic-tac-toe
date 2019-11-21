@@ -103,3 +103,8 @@ a {
 .player-details button {
     margin: 12px 0px 0px 12px;
 }
+
+.game-name {
+    font-size:25px;
+    color: #ff3d71;
+}

@@ -21,7 +21,7 @@ export class ActionCreator<T> implements Action {
     constructor(
         public type: string = 'NOT_SET',
         public payload?: T
-    ) {}
+    ) { }
 
 }
 
@@ -29,12 +29,10 @@ export class ActionCreator<T> implements Action {
 export class ActionCreatorFactory {
 
     static create?<T>(type: string, defaultPayloadValue?: any) {
-
         return (payload?: T): Action => {
             const _payload = payload || typeof payload !== 'undefined' ? payload : defaultPayloadValue;
             return new ActionCreator<T>(type, _payload);
         };
-
     }
 
     create?<T>(type: string, defaultPayloadValue?: any) {
